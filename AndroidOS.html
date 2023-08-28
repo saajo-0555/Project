@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AndroidOS</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      color: #333333;
+    }
+    
+    .product {
+      margin-bottom: 30px;
+      border: 1px solid #dddddd;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .product-img {
+      width: 200px;
+      margin-right: 20px;
+    }
+    
+    .product-info {
+      flex: 1;
+    }
+    
+    .product-title {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .product-description {
+      margin-bottom: 15px;
+    }
+    
+    .product-link {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1><center><a href="https://www.android.com/intl/en_in/"target"-main">
+<img src="data:image/png;base64,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"/></a><center></h1>
+
+<h4>Explore Our Latest Products</h4>
+
+<div class="product">
+    <a href="https://www.amazon.in/Samsung-Awesome-Storage-Gorilla-Without/dp/B0BXD3CDP8/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BXD3CDP8&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-4-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">
+        <img src="https://m.media-amazon.com/images/I/71kfHC4ANJL._AC_UL400_.jpg" class="product-img" />
+    </a>
+    <div class="product-info">
+        <h2 class="product-title">Samsung Galaxy A54 5G (Awesome Violet, 8GB, 256GB Storage) | 50 MP No Shake Cam (OIS) | IP67 | Gorilla Glass 5 | Voice Focus | Without Charge</h2>
+        <p class="product-description">Experience the power of the Samsung Galaxy A54 5G. With its sleek design and impressive features, this smartphone is perfect for tech enthusiasts and mobile gamers. The device comes with 8GB of RAM and 256GB of storage, providing ample space for all your apps, photos, and files. The 50 MP No Shake Cam with Optical Image Stabilization (OIS) ensures clear and sharp photos, while the IP67 rating offers protection against dust and water. The Gorilla Glass 5 provides durability and added protection to the device. With Voice Focus technology, your voice will always be crystal clear during calls and recordings. And the best part? The Samsung Galaxy A54 5G comes without the hassle of charging, thanks to its long-lasting battery life.</p>
+        <h3 class="product-features-title">Features:</h3>
+        <ul class="product-features">
+            <li>50 MP No Shake Cam (OIS) for clear and sharp photos</li>
+            <li>IP67 rating for dust and water resistance</li>
+            <li>Gorilla Glass 5 for added durability and protection</li>
+            <li>Voice Focus technology for crystal clear audio during calls and recordings</li>
+            <li>Long-lasting battery life without the need for frequent charging</li>
+        </ul>
+        <a href="https://www.amazon.in/Samsung-Awesome-Storage-Gorilla-Without/dp/B0BXD3CDP8/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BXD3CDP8&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-4-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">View on Amazon</a>
+    </div>
+</div>
+
+<div class="product">
+    <a href="https://www.amazon.in/Samsung-Galaxy-Storage-Without-Charger/dp/B0BS16FS5K/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BS16FS5K&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-3-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">
+        <img src="https://m.media-amazon.com/images/I/81QW4IDVidL._AC_UL400_.jpg" height="220" width="180" />
+    </a>
+    <div class="product-info">
+        <h2 class="product-title">Samsung Galaxy A14 5G (Dark Red, 6GB, 128GB Storage) | Triple Rear Camera (50 MP Main) | Upto 12 GB RAM with RAM Plus | Without Charger</h2>
+        <p class="product-description">Experience the power of the Samsung Galaxy A14 5G. This smartphone in a stylish Dark Red color offers a seamless performance with its 6GB of RAM and 128GB of storage, providing ample space for all your apps, photos, and files. Capture stunning photos with the triple rear camera, featuring a 50 MP main sensor. With the option to upgrade to up to 12 GB RAM using RAM Plus, you can enjoy smooth multitasking and seamless app performance. The Samsung Galaxy A14 5G comes without a charger, offering you a more sustainable and eco-friendly choice for powering up your device.</p>
+        <h3 class="product-features-title">Features:</h3>
+        <ul class="product-features">
+            <li>Triple rear camera setup with a 50 MP main sensor</li>
+            <li>Up to 12 GB RAM with RAM Plus for enhanced performance</li>
+            <li>Stylish Dark Red color design</li>
+            <li>Ample 128GB storage for all your apps and files</li>
+            <li>Environmentally-friendly choice without a charger</li>
+        </ul>
+        <a href="https://www.amazon.in/Samsung-Galaxy-Storage-Without-Charger/dp/B0BS16FS5K/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BS16FS5K&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-3-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">View on Amazon</a>
+    </div>
+</div>
+ 
+<div class="product">
+    <a href="https://www.amazon.in/Samsung-Galaxy-S21-128GB-Graphite/dp/B0C1ZJG98Z/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0C1ZJG98Z&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-2-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">
+        <img src="https://m.media-amazon.com/images/I/51xc3Go1h0L._AC_UL400_.jpg" height="220" width="180" />
+    </a>
+    <div class="product-info">
+        <h2 class="product-title">Samsung Galaxy S21 FE 8GB 128GB (Graphite)</h2>
+        <p class="product-description">Experience the power and elegance of the Samsung Galaxy S21 FE. This smartphone in the Graphite color variant offers a seamless performance with its 8GB of RAM and 128GB of storage, providing ample space for all your apps, photos, and files. Capture stunning photos and videos with the high-quality camera system. The Samsung Galaxy S21 FE combines cutting-edge features with a stylish design, delivering an exceptional user experience.</p>
+        <h3 class="product-features-title">Features:</h3>
+        <ul class="product-features">
+            <li>6.4-inch Super AMOLED display</li>
+            <li>Exynos 2100 octa-core processor</li>
+            <li>8GB RAM and 128GB internal storage</li>
+            <li>Triple rear camera setup: 64MP main camera, 12MP ultra-wide camera, and 8MP telephoto camera</li>
+            <li>32MP front-facing camera</li>
+            <li>4500mAh battery with fast charging support</li>
+            <li>IP68 water and dust resistance</li>
+            <li>5G connectivity</li>
+            <li>Android 11 operating system</li>
+        </ul>
+        <a href="https://www.amazon.in/Samsung-Galaxy-S21-128GB-Graphite/dp/B0C1ZJG98Z/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0C1ZJG98Z&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-2-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">View on Amazon</a>
+    </div>
+</div>
+
+
+<div class="product">
+    <a href="https://www.amazon.in/Samsung-Storage-Battery-Octa-Core-Processor/dp/B0BZCSNTT4/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BZCSNTT4&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-1-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">
+        <img src="https://m.media-amazon.com/images/I/91HRACirFrL._AC_UL400_.jpg" height="220" width="180"/>
+    </a>
+    <div class="product-info">
+        <h2 class="product-title">Samsung Galaxy M14 5G (Berry Blue, 6GB, 128GB Storage) | 50MP Triple Cam | 6000 mAh Battery | 5nm Octa-Core Processor | 12GB RAM with RAM Plus | Android 13 | Without Charger</h2>
+        <p class="product-description">Description of the Android phone goes here.</p> 
+        <h3 class="product-features-title">Features:</h3>
+        <ul class="product-features">
+            <li>5G connectivity for fast and reliable mobile internet</li>
+            <li>50MP triple camera system for capturing stunning photos</li>
+            <li>Massive 6000mAh battery for all-day usage</li>
+            <li>Powerful 5nm octa-core processor for smooth performance</li>
+            <li>Ample 6GB RAM and 128GB storage capacity</li>
+            <li>Runs on the latest Android 13 operating system</li>
+            <li>Does not include a charger</li>
+        </ul>
+        <a href="https://www.amazon.in/Samsung-Storage-Battery-Octa-Core-Processor/dp/B0BZCSNTT4/ref=sxin_14_hcs-la-eu-tqprod?content-id=amzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb%3Aamzn1.sym.b97f8b16-49e0-42a3-b811-94a239f21cfb&crid=31U3QTWQH1XI4&cv_ct_cx=samsung+mobile&keywords=samsung+mobile&pd_rd_i=B0BZCSNTT4&pd_rd_r=86021fd6-fbf4-4f51-b73d-67495e8a5f74&pd_rd_w=LRSYE&pd_rd_wg=2evZg&pf_rd_p=b97f8b16-49e0-42a3-b811-94a239f21cfb&pf_rd_r=1H3RPQA3TA6CCFHMQW63&qid=1685898495&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=SA%2Caps%2C488&sr=1-1-ca1238e8-4946-4218-b362-7c3431ea8df6" target="_main">View on Amazon</a>
+    </div>
+</div>
+
+
+<div class="product">
+    <a href="https://www.amazon.in/OnePlus-Nord-Lite-128GB-Storage/dp/B09WQYFLRX/ref=sr_1_1_sspa?crid=31U3QTWQH1XI4&keywords=samsung+mobile&qid=1685898495&sprefix=SA%2Caps%2C488&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_main">
+        <img src="https://m.media-amazon.com/images/I/71AvQd3VzqL._AC_UY218_.jpg" />
+    </a>
+    <div class="product-info">
+        <h2 class="product-title">OnePlus Nord CE 2 Lite 5G (Blue Tide, 6GB RAM, 128GB Storage)</h2>
+        <p class="product-description">Experience the power of OnePlus Nord CE 2 Lite 5G with its stunning design and impressive features. This smartphone is equipped with a high-performance processor, ample RAM, and generous storage to handle all your tasks with ease.</p>
+        <h3 class="product-features-title">Features:</h3>
+        <ul class="product-features">
+            <li>6GB RAM for smooth multitasking</li>
+            <li>128GB storage for your apps, photos, and files</li>
+            <li>5G connectivity for fast and reliable internet</li>
+        </ul>
+        <a href="https://www.amazon.in/OnePlus-Nord-Lite-128GB-Storage/dp/B09WQYFLRX/ref=sr_1_1_sspa?crid=31U3QTWQH1XI4&keywords=samsung+mobile&qid=1685898495&sprefix=SA%2Caps%2C488&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_main">View on Amazon</a>
+    </div>
+</div>
+
+
+    
+    <!-- Add more products as needed -->
+
+ 
+  
+</body>
+</html>
